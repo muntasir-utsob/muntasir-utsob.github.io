@@ -329,7 +329,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*==========================================
     CERTIFICATE FADE IN
 ==========================================*/
-
+/*
 ScrollReveal().reveal(".certificate-frame", {
   distance: "50px",
 
@@ -339,6 +339,7 @@ ScrollReveal().reveal(".certificate-frame", {
 
   origin: "bottom",
 });
+*/
 /*==========================================
         CERTIFICATE LIGHTBOX
 ==========================================*/
