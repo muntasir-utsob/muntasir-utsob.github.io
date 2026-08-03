@@ -257,7 +257,7 @@ function debounce(func, wait = 10) {
     }, wait);
   };
 }
-
+/*
 // Lazy Loading Images
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("img").forEach((img) => {
@@ -280,7 +280,7 @@ document.addEventListener("keydown", (e) => {
     });
   }
 });
-
+*/
 // External Links Security
 document.querySelectorAll('a[target="_blank"]').forEach((link) => {
   link.setAttribute("rel", "noopener noreferrer");
@@ -381,4 +381,11 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     lightbox.classList.remove("active");
   }
+});
+
+// Force all images to load eagerly to prevent blank boxes
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("img").forEach((img) => {
+    img.loading = "eager";
+  });
 });
