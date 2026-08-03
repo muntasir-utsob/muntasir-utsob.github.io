@@ -474,15 +474,16 @@ img {
 
 .slider {
   margin: 0 auto;
-  width: 800px;
-  height: 400px;
+  width: 1000px;
+  height: 500px;
   overflow: hidden;
   margin-top: 10px;
+  position: relative;
 }
 
 .slides {
-  width: 400%;
-  height: 400px;
+  width: 1100%;
+  height: 500px;
   display: flex;
 }
 
@@ -491,21 +492,26 @@ img {
 }
 
 .slide {
-  width: 25%;
+  width: 9.09%;
+  height: 500px;
   position: relative;
   transition: 3s;
 }
 
 .slide img {
-  width: 800px;
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+  display: block;
 }
 
 .manual-navegacao {
   position: absolute;
-  width: 800px;
-  margin-top: -80px;
+  width: 1000px;
+  margin-top: -50px;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .manual-btn {
@@ -524,22 +530,40 @@ img {
   background-color: #fff;
 }
 .first {
-  width: 800px;
+  width: 1000px;
 }
 #radio1:checked ~ .first {
   margin-left: 0%;
 }
-
 #radio2:checked ~ .first {
-  margin-left: -25%;
+  margin-left: -9.09%;
 }
-
 #radio3:checked ~ .first {
-  margin-left: -50%;
+  margin-left: -18.18%;
 }
-
 #radio4:checked ~ .first {
-  margin-left: -75%;
+  margin-left: -27.27%;
+}
+#radio5:checked ~ .first {
+  margin-left: -36.36%;
+}
+#radio6:checked ~ .first {
+  margin-left: -45.45%;
+}
+#radio7:checked ~ .first {
+  margin-left: -54.54%;
+}
+#radio8:checked ~ .first {
+  margin-left: -63.63%;
+}
+#radio9:checked ~ .first {
+  margin-left: -72.72%;
+}
+#radio10:checked ~ .first {
+  margin-left: -81.81%;
+}
+#radio11:checked ~ .first {
+  margin-left: -90.9%;
 }
 
 .navegacao-auto div {
@@ -552,10 +576,11 @@ img {
 
 .navegacao-auto {
   position: absolute;
-  width: 800px;
-  margin-top: 320px;
+  width: 1000px;
+  margin-top: 440px;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .navegacao-auto div:not(:last-child) {
@@ -579,6 +604,24 @@ img {
 }
 
 #radio5:checked ~ .navegacao-auto .auto-btn5 {
+  background-color: #fff;
+}
+#radio6:checked ~ .navegacao-auto .auto-btn6 {
+  background-color: #fff;
+}
+#radio7:checked ~ .navegacao-auto .auto-btn7 {
+  background-color: #fff;
+}
+#radio8:checked ~ .navegacao-auto .auto-btn8 {
+  background-color: #fff;
+}
+#radio9:checked ~ .navegacao-auto .auto-btn9 {
+  background-color: #fff;
+}
+#radio10:checked ~ .navegacao-auto .auto-btn10 {
+  background-color: #fff;
+}
+#radio11:checked ~ .navegacao-auto .auto-btn11 {
   background-color: #fff;
 }
 

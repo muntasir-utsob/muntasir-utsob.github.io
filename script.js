@@ -69,7 +69,7 @@ function nextImage() {
 
   count++;
 
-  if (count > 4) {
+  if (count > 11) {
     count = 1;
   }
 
@@ -83,13 +83,13 @@ function nextImage() {
 /*==================== SCROLL REVEAL ====================*/
 
 if (typeof ScrollReveal !== "undefined") {
-const sr = ScrollReveal({
+  const sr = ScrollReveal({
     origin: "bottom",
     distance: "70px",
     duration: 1200,
     delay: 150,
-    reset: false
-});
+    reset: false,
+  });
 
   sr.reveal(".home__data, .about__img, .skills__subtitle, .skills__text", {});
   sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
@@ -312,40 +312,32 @@ console.log(
 ==========================================*/
 
 document.addEventListener("DOMContentLoaded", () => {
+  const skillBars = document.querySelectorAll(".skills__bar");
 
-    const skillBars = document.querySelectorAll(".skills__bar");
+  skillBars.forEach((bar) => {
+    const width = bar.style.width;
 
-    skillBars.forEach((bar) => {
+    bar.style.width = "0";
 
-        const width = bar.style.width;
+    setTimeout(() => {
+      bar.style.transition = "width 1.8s ease";
 
-        bar.style.width = "0";
-
-        setTimeout(() => {
-
-            bar.style.transition = "width 1.8s ease";
-
-            bar.style.width = width;
-
-        }, 300);
-
-    });
-
+      bar.style.width = width;
+    }, 300);
+  });
 });
 /*==========================================
     CERTIFICATE FADE IN
 ==========================================*/
 
-ScrollReveal().reveal('.certificate-frame',{
+ScrollReveal().reveal(".certificate-frame", {
+  distance: "50px",
 
-    distance:'50px',
+  duration: 1000,
 
-    duration:1000,
+  interval: 100,
 
-    interval:100,
-
-    origin:'bottom'
-
+  origin: "bottom",
 });
 /*==========================================
         CERTIFICATE LIGHTBOX
@@ -356,50 +348,36 @@ const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.getElementById("lightbox-close");
 
 document.querySelectorAll(".certificate-frame img").forEach((img) => {
+  img.addEventListener("click", function (e) {
+    const parent = this.closest("a");
 
-    img.addEventListener("click", function (e) {
+    // যদি external link থাকে, তাহলে Lightbox চালু হবে না
+    if (parent && parent.getAttribute("href")) {
+      return;
+    }
 
-        const parent = this.closest("a");
+    e.preventDefault();
 
-        // যদি external link থাকে, তাহলে Lightbox চালু হবে না
-        if (parent && parent.getAttribute("href")) {
-            return;
-        }
+    lightbox.classList.add("active");
 
-        e.preventDefault();
+    lightboxImg.src = this.src;
 
-        lightbox.classList.add("active");
-
-        lightboxImg.src = this.src;
-
-        lightboxImg.alt = this.alt;
-
-    });
-
+    lightboxImg.alt = this.alt;
+  });
 });
 
 closeBtn.addEventListener("click", () => {
-
-    lightbox.classList.remove("active");
-
+  lightbox.classList.remove("active");
 });
 
 lightbox.addEventListener("click", (e) => {
-
-    if (e.target === lightbox) {
-
-        lightbox.classList.remove("active");
-
-    }
-
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+  }
 });
 
 document.addEventListener("keydown", (e) => {
-
-    if (e.key === "Escape") {
-
-        lightbox.classList.remove("active");
-
-    }
-
+  if (e.key === "Escape") {
+    lightbox.classList.remove("active");
+  }
 });
