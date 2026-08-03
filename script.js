@@ -382,10 +382,3 @@ document.addEventListener("keydown", (e) => {
     lightbox.classList.remove("active");
   }
 });
-
-// Force all images to load eagerly to prevent blank boxes
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("img").forEach((img) => {
-    img.loading = "eager";
-  });
-});

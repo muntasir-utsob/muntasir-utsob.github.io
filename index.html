@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <title>Home | Muntasir Ayan Utsob</title>
-    <link href="images/Other Photo/Utsob.png" rel="icon" type="image/png"/>
+    <link href="images/Other Photo/Utsob.png" rel="icon" type="image/png" />
     <meta
       content="Official portfolio of Muntasir Ayan Utsob - Software Developer, Programmer, AI Enthusiast and Technology Enthusiast."
       name="description"
@@ -83,7 +83,7 @@
               <a class="nav__link" href="project.html"> Project </a>
             </li>
             <li class="nav__item">
-             <a class="nav__link" href="seminar.html"> Seminar </a>
+              <a class="nav__link" href="seminar.html"> Seminar </a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="video.html"> Video </a>
@@ -103,16 +103,13 @@
             <br />
             I'm
             <span class="home__title-color"> Muntasir Ayan Utsob </span>
-            <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <br />
             <!-- Element to contain animated typing -->
             <span id="typing-animation"> </span>
             <script>
-              // Initialize the typing animation
               const typingAnimationElement =
                 document.getElementById("typing-animation");
 
-              // Create an array of typing text
               const typingTexts = [
                 "Problem Solver ",
                 "Programmer  ",
@@ -122,18 +119,15 @@
                 "Digital Marketer",
               ];
 
-              // Create a function to display the typing animation for a given text
               function playTypingAnimation(text) {
-                // Loop through each character and add it to the element
                 for (let i = 0; i < text.length; i++) {
                   setTimeout(() => {
                     if (typingAnimationElement.textContent === "|")
                       typingAnimationElement.textContent = "";
                     typingAnimationElement.textContent += text[i];
-                  }, i * 200); // Increase the delay to slow down the typing animation
+                  }, i * 200);
                 }
 
-                // Once the animation is complete, reset the text and start over
                 setTimeout(() => {
                   typingAnimationElement.textContent = "|";
                   playTypingAnimation(
@@ -144,11 +138,9 @@
                 }, text.length * 200);
               }
 
-              // Start the typing animation loop
               playTypingAnimation(typingTexts[0]);
             </script>
           </h1>
-          <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
           <a
             aria-label="Contact Muntasir Ayan Utsob on LinkedIn"
             class="button"
@@ -225,7 +217,7 @@
           </svg>
         </div>
       </section>
-      <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
       <!--Image carousel-->
       <div class="slider">
         <div class="slides">
@@ -236,64 +228,91 @@
           <input id="radio4" name="radio-btn" type="radio" />
           <input id="radio5" name="radio-btn" type="radio" />
           <input id="radio6" name="radio-btn" type="radio" />
-<input id="radio7" name="radio-btn" type="radio" />
-<input id="radio8" name="radio-btn" type="radio" />
-<input id="radio9" name="radio-btn" type="radio" />
-<input id="radio10" name="radio-btn" type="radio" />
-<input id="radio11" name="radio-btn" type="radio" />
+          <input id="radio7" name="radio-btn" type="radio" />
+          <input id="radio8" name="radio-btn" type="radio" />
+          <input id="radio9" name="radio-btn" type="radio" />
+          <input id="radio10" name="radio-btn" type="radio" />
+          <input id="radio11" name="radio-btn" type="radio" />
 
-          <!--Fim Radio Buttons-->
           <!--Slides em imagens-->
           <div class="slide first">
             <img
               alt="NASA Space Apps Challenge event photo"
-              
               src="images/Photo Gallery/NASA 1.webp"
+              loading="lazy"
             />
           </div>
           <div class="slide">
             <img
               alt="YUNet 1"
-              
               src="images/Photo Gallery/YUNet 1.webp"
+              loading="lazy"
             />
           </div>
           <div class="slide">
             <img
               alt="bdapps 2"
-              
               src="images/Photo Gallery/bdapps 1.webp"
+              loading="lazy"
             />
           </div>
           <div class="slide">
             <img
               alt="BITPA event photo 4"
-              
               src="images/Photo Gallery/BITPA 1.webp"
+              loading="lazy"
             />
           </div>
           <div class="slide">
-         <img alt="BITPA 2" src="images/Photo Gallery/BITPA 5.webp" />
-         </div>
-         <div class="slide">
-  <img alt="BITPA 2" src="images/Photo Gallery/BITPA 2.webp" />
-</div>
-<div class="slide">
-  <img alt="YUNet 10" src="images/Photo Gallery/YUNet 10.webp" />
-</div>
-<div class="slide">
-  <img alt="bdapps Award Night 2025 7" src="images/Photo Gallery/bdapps Award Night 2025 7.webp" />
-</div>
-<div class="slide">
-  <img alt="BASIS_Soft_Expo_2023_2" src="images/Photo Gallery/BASIS_Soft_Expo_2023_2.webp" />
-</div>
-<div class="slide">
-  <img alt="NASA 4" src="images/Photo Gallery/NASA 4.webp" />
-</div>
-<div class="slide">
-  <img alt="Utsob_2" src="images/Photo Gallery/Utsob_2.webp" />
-</div>
-          <!--Fim Slides em imagens-->
+            <img
+              alt="BITPA 2"
+              src="images/Photo Gallery/BITPA 5.webp"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              alt="BITPA 2"
+              src="images/Photo Gallery/BITPA 2.webp"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              alt="YUNet 10"
+              src="images/Photo Gallery/YUNet 10.webp"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              alt="bdapps Award Night 2025 7"
+              src="images/Photo Gallery/bdapps Award Night 2025 7.webp"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              alt="BASIS_Soft_Expo_2023_2"
+              src="images/Photo Gallery/BASIS_Soft_Expo_2023_2.webp"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              alt="NASA 4"
+              src="images/Photo Gallery/NASA 4.webp"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              alt="Utsob_2"
+              src="images/Photo Gallery/Utsob_2.webp"
+              loading="lazy"
+            />
+          </div>
+
           <!--Bolinhas de navegação-->
           <div class="navegacao-auto">
             <div class="auto-btn1"></div>
@@ -309,10 +328,9 @@
             <div class="auto-btn11"></div>
           </div>
         </div>
-
       </div>
       <script src="script.js"></script>
-      <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
       <!--===== Quote =====-->
       <section class="home bd-grid quote" id="quote">
         <div class="home__data">
@@ -326,22 +344,33 @@
           </h3>
         </div>
       </section>
-      <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-      
+
       <section class="about section" id="about">
         <h2 class="section-title">About</h2>
         <div class="about__container bd-grid">
           <div class="about__img">
             <img
               alt="Portrait of Muntasir Ayan Utsob"
-              
               src="images/Other Photo/Utsob.png"
+              loading="lazy"
             />
           </div>
           <div class="about_text_container">
             <h2 class="about__subtitle">I'm Muntasir Ayan Utsob</h2>
             <p class="about__text">
-Dedicated and detail-oriented Software Quality Assurance (SQA) Professional with a strong passion for delivering flawless, high-performance software products. I specialize in the complete software testing life cycle (STLC), including requirement analysis, test planning, execution, and defect management. With hands-on expertise in both manual and automated testing, I am highly skilled in API testing, functional testing, and UI/UX validation. Proficient in industry-standard tools like Selenium, Postman, and Jira, I thrive in Agile/Scrum environments. My core strength lies in analyzing complex systems, uncovering edge-case scenarios, and collaborating closely with cross-functional development teams to ensure every release meets the highest quality standards.
+              Dedicated and detail-oriented Software Quality Assurance (SQA)
+              Professional with a strong passion for delivering flawless,
+              high-performance software products. I specialize in the complete
+              software testing life cycle (STLC), including requirement
+              analysis, test planning, execution, and defect management. With
+              hands-on expertise in both manual and automated testing, I am
+              highly skilled in API testing, functional testing, and UI/UX
+              validation. Proficient in industry-standard tools like Selenium,
+              Postman, and Jira, I thrive in Agile/Scrum environments. My core
+              strength lies in analyzing complex systems, uncovering edge-case
+              scenarios, and collaborating closely with cross-functional
+              development teams to ensure every release meets the highest
+              quality standards.
             </p>
             <br />
             <p align="left">
@@ -349,6 +378,7 @@ Dedicated and detail-oriented Software Quality Assurance (SQA) Professional with
                 class="button"
                 href="https://www.linkedin.com/in/utsob/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Learn More!
               </a>
@@ -356,10 +386,9 @@ Dedicated and detail-oriented Software Quality Assurance (SQA) Professional with
           </div>
         </div>
       </section>
-<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
       <!--===== FOOTER =====-->
       <footer class="footer">
-
         <div class="contact__container bd-grid">
           <div class="contact-info">
             <i class="fas fa-map-marker-alt contact-icon"></i>
@@ -388,16 +417,13 @@ Dedicated and detail-oriented Software Quality Assurance (SQA) Professional with
             </span>
           </div>
         </div>
-      </section>
-<br>
+        <br />
         <p class="footer__copy">
           © 2026 Muntasir Ayan Utsob. All Rights Reserved.
         </p>
       </footer>
-      <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     </main>
     <script src="https://unpkg.com/scrollreveal"></script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
-<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
