@@ -1668,3 +1668,41 @@ section {
     0 20px 45px rgba(0, 0, 0, 0.22),
     0 0 25px rgba(64, 112, 244, 0.18);
 }
+
+.footer .contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.footer .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+
+.footer .contact-icon,
+.footer .contact-text,
+.footer .contact-text a {
+  color: #ffffff !important;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.footer__socials a,
+.footer__socials i {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer__socials a:hover {
+  opacity: 0.8;
+}
